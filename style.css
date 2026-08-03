@@ -29,33 +29,33 @@ body{
 }
 
 
-body::before{
+body{
 
-    content:"";
+    min-height:100vh;
 
-    position:absolute;
+    background:
+    radial-gradient(circle at top,
+    #ff00ff,
+    transparent 35%),
 
-    width:500px;
-    height:500px;
+    radial-gradient(circle at bottom,
+    #00ffff,
+    transparent 40%),
 
-    background:#ff00ff;
+    linear-gradient(
+    135deg,
+    #020024,
+    #090979,
+    #000
+    );
 
-    filter:blur(180px);
+    color:white;
 
-    animation:move 6s infinite alternate;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
-}
-
-
-@keyframes move{
-
-from{
-transform:translate(-200px,-100px);
-}
-
-to{
-transform:translate(200px,100px);
-}
+    overflow:hidden;
 
 }
 
