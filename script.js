@@ -40,3 +40,10 @@ document.getElementById("seconds").innerHTML=segundos;
 
 
 },1000);
+const music = document.getElementById("backgroundMusic");
+
+music.volume = 0.3;
+
+document.addEventListener("click", function(){
+    music.play();
+});
