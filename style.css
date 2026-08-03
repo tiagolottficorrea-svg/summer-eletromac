@@ -1,1 +1,249 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
 
+
+body{
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(
+    45deg,
+    #050014,
+    #1a0033,
+    #001f3f
+    );
+
+    color:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    overflow:hidden;
+
+}
+
+
+body::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+    height:500px;
+
+    background:#ff00ff;
+
+    filter:blur(180px);
+
+    animation:move 6s infinite alternate;
+
+}
+
+
+@keyframes move{
+
+from{
+transform:translate(-200px,-100px);
+}
+
+to{
+transform:translate(200px,100px);
+}
+
+}
+
+
+
+.container{
+
+    text-align:center;
+
+    padding:30px;
+
+    z-index:1;
+
+}
+
+
+
+h1{
+
+    font-size:45px;
+
+    color:#00ffff;
+
+    text-shadow:
+    0 0 10px #00ffff,
+    0 0 30px #ff00ff;
+
+}
+
+
+.subtitle{
+
+    margin:15px;
+
+    font-size:20px;
+
+}
+
+
+
+.timer{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    margin:40px 0;
+
+}
+
+
+
+.timer div{
+
+    background:rgba(255,255,255,0.1);
+
+    border:2px solid #ff00ff;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    box-shadow:
+    0 0 20px #ff00ff;
+
+}
+
+
+
+.timer span{
+
+    display:block;
+
+    font-size:40px;
+
+    color:#00ffff;
+
+}
+
+
+
+.timer small{
+
+    font-size:15px;
+
+}
+
+
+
+.cards{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+
+
+.card{
+
+    width:220px;
+
+    padding:20px;
+
+    background:rgba(255,255,255,.1);
+
+    border-radius:20px;
+
+    border:2px solid #00ffff;
+
+    box-shadow:
+    0 0 20px #00ffff;
+
+}
+
+
+
+.card h2{
+
+    margin:10px;
+
+}
+
+
+
+.maps{
+
+    display:inline-block;
+
+    margin-top:35px;
+
+    padding:15px 30px;
+
+    background:#ff00ff;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:30px;
+
+    font-weight:bold;
+
+    box-shadow:
+    0 0 25px #ff00ff;
+
+}
+
+
+
+footer{
+
+    margin-top:30px;
+
+    opacity:.8;
+
+}
+
+
+
+
+@media(max-width:700px){
+
+.timer{
+
+flex-wrap:wrap;
+
+}
+
+
+.cards{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+
+h1{
+
+font-size:32px;
+
+}
+
+}
