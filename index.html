@@ -1,96 +1,88 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Summer Neon Party 🎉</title>
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Summer Eletromac</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-<div class="container">
+  <!-- Música -->
+  <audio id="bgMusic" loop>
+    <source src="music/musica.mp3" type="audio/mpeg" />
+  </audio>
 
-    <h1>ELETROMAC</h1>
+  <!-- Overlay escuro -->
+  <div class="overlay"></div>
 
-<h3 class="birthday">
-    🎂 Aniversário de: <span>Artur Mac - 19 anos</span>
-</h3>
+  <!-- Conteúdo -->
+  <div class="container">
 
-<p class="subtitle">
-    Uma noite inesquecível está chegando...
-</p>
+    <div class="top-text">ESTREIA DA NOVA CASA!</div>
 
-    <p class="subtitle">
-        Uma noite inesquecível está chegando...
+    <h1 class="title">
+      <span>SUMMER</span>
+      <small>ELETROMAC</small>
+    </h1>
+
+    <p class="tagline">
+      A FESTA <b>POOL PARTY</b> QUE VAI MARCAR A HISTÓRIA.
     </p>
 
+    <h2 class="count-title">⚡ CONTAGEM REGRESSIVA ⚡</h2>
 
     <div class="timer">
+      <div class="time-box">
+        <span id="days">00</span>
+        <small>DIAS</small>
+      </div>
 
-        <div>
-            <span id="days">00</span>
-            <small>Dias</small>
-        </div>
+      <div class="time-box">
+        <span id="hours">00</span>
+        <small>HORAS</small>
+      </div>
 
-        <div>
-            <span id="hours">00</span>
-            <small>Horas</small>
-        </div>
+      <div class="time-box">
+        <span id="minutes">00</span>
+        <small>MINUTOS</small>
+      </div>
 
-        <div>
-            <span id="minutes">00</span>
-            <small>Minutos</small>
-        </div>
-
-        <div>
-            <span id="seconds">00</span>
-            <small>Segundos</small>
-        </div>
-
+      <div class="time-box">
+        <span id="seconds">00</span>
+        <small>SEGUNDOS</small>
+      </div>
     </div>
-
 
     <div class="cards">
+      <div class="card pink">
+        <h3>🍹 OPEN BAR</h3>
+        <p>Bebidas liberadas durante a festa!</p>
+      </div>
 
-        <div class="card">
-            🍹
-            <h2>OPEN BAR</h2>
-            <p>Bebidas liberadas durante a festa!</p>
-        </div>
-
-
-        <div class="card">
-            🏊
-            <h2>PISCINA</h2>
-            <p>Prepare seu traje de banho!</p>
-        </div>
-
+      <div class="card blue">
+        <h3>🏊 PISCINA</h3>
+        <p>Prepare seu traje de banho!</p>
+      </div>
     </div>
 
-
-    <a class="maps"
-    href="https://www.google.com/maps/place/R.+Cordeiro+Galvão,+382+-+Alto+de+Pinheiros,+São+Paulo+-+SP,+05450-020"
-    target="_blank">
-
-    📍 Ver localização no Maps
-
+    <a class="maps-btn"
+       href="https://www.google.com/maps/place/R.+Cordeiro+Galvão,+382+-+Alto+de+Pinheiros,+São+Paulo+-+SP,+05450-020"
+       target="_blank">
+       📍 VER LOCALIZAÇÃO NO MAPS
     </a>
 
+    <div class="footer-box">
+      <div>📅 08/08/2026</div>
+      <div>🕗 20H</div>
+    </div>
 
-    <footer>
-        08/08/2026 • 20h
-    </footer>
+    <p class="footer-text">✨ TE ESPERAMOS LÁ! ✨</p>
 
+    <button class="music-btn" onclick="playMusic()">🔊 ATIVAR MÚSICA</button>
 
-</div>
+  </div>
 
-
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
-<audio id="backgroundMusic" autoplay loop>
-    <source src="music/musica.mp3" type="audio/mpeg">
-</audio>
