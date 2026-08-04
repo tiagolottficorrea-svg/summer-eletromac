@@ -7,7 +7,7 @@
 
 body{
   min-height:100vh;
-  background:url('images/background.jpg') center/cover no-repeat fixed;
+  background:url('images/background.jpg.jpg') center/cover no-repeat fixed;
   display:flex;
   justify-content:center;
   align-items:center;
